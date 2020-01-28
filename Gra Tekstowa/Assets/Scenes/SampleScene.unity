@@ -181,7 +181,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 0
+  m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
@@ -214,8 +214,6 @@ GameObject:
   - component: {fileID: 796105810}
   - component: {fileID: 796105812}
   - component: {fileID: 796105811}
-  - component: {fileID: 796105814}
-  - component: {fileID: 796105813}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -278,36 +276,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796105809}
   m_CullTransparentMesh: 0
---- !u!114 &796105813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796105809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5683b8719ec0d42988127c55217090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  team: 
-  haveBerlin: 0
---- !u!114 &796105814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796105809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5683b8719ec0d42988127c55217090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  team: 
-  haveBerlin: 0
 --- !u!1 &1188007542
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,27 +51,44 @@ public class TextController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            team += "D";
+            if (!team.Contains("D")) {
+                team += "D";
+            }
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
-            team += "T";
+            if (!team.Contains("T"))
+            {
+                team += "T";
+            }
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            team += "B";
+            if (!team.Contains("B"))
+            {
+                team += "B";
+            }
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
-            team += "N";
+            if (!team.Contains("N"))
+            {
+                team += "N";
+            }
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            team += "R";
+            if (!team.Contains("R"))
+            {
+                team += "R";
+            }
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
-            team += "H";
+            if (!team.Contains("H"))
+            {
+                team += "H";
+            }
         }
     }
     private void beforeDay()
@@ -96,6 +113,18 @@ public class TextController : MonoBehaviour
             text.text = text.text + "Wybrales: Denvera, Tokyo i Rio.";
         }
 
+        else if (team == "DBR" || team == "BDR" || team == "RBD" || team == "DRB" || team == "BRD" || team == "RDB")
+        {
+            team = "DBR";
+            text.text = text.text + "Wybrales: Denvera, Berlina i Rio.";
+        }
+
+        else if (team == "DHR" || team == "HDR" || team == "RHD" || team == "DRH" || team == "HRD" || team == "RDH")
+        {
+            team = "DHR";
+            text.text = text.text + "Wybrales: Denvera, Helsinki i Rio.";
+        }
+
         else if (team == "DTH" || team == "TDH" || team == "HTD" || team == "DHT" || team == "THD" || team == "HDT")
         {
             team = "DTH";
@@ -107,6 +136,13 @@ public class TextController : MonoBehaviour
             team = "BTN";
             haveBerlin = true;
             text.text = text.text + "Wybrales: Berlina, Tokyo i Nairobi.";
+        }
+
+        else if (team == "BTR" || team == "TBR" || team == "RTB" || team == "BRT" || team == "TRB" || team == "RBT")
+        {
+            team = "BTR";
+            haveBerlin = true;
+            text.text = text.text + "Wybrales: Berlina, Tokyo i Rio.";
         }
 
         else if (team == "BHN" || team == "HBN" || team == "NHB" || team == "BNH" || team == "HNB" || team == "NBH")
